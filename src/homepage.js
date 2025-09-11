@@ -1,34 +1,33 @@
-import pasta from "./pasta.jpg";
-import utensils from "./utensils.svg";
+import homepage from "./homepage.svg";
 
 function homeContent() {
     const content = document.querySelector("#content");
 
-    const contentHeader = document.createElement("h1");
-    contentHeader.classList.add("contentHeader");
-    contentHeader.textContent = "WELCOME TO MY RESTAURANT!";
+    const homeHeader = document.createElement("h1");
+    homeHeader.classList.add("home-header");
+    homeHeader.textContent = "Homepage";
 
-    const image = document.createElement("img");
-    image.src = pasta;
-    image.width = 300; 
-    image.height = 200;
+    const homeImg = document.createElement("img");
+    homeImg.src = homepage;
+    homeImg.classList.add("home-main-image");
+    homeImg.style.width = "200px";
+    homeImg.style.height = "auto"; 
 
-    const imageTwo = document.createElement("img");
-    imageTwo.src = utensils;
-    imageTwo.style.width = "200px";
-    imageTwo.style.height = "auto"; 
+    const homeDiv = document.createElement("div");
+    homeDiv.classList.add("card");
 
+    const contentTitle = document.createElement("h2");
+    contentTitle.classList.add("content-title");
+    contentTitle.textContent = "Welcome to Canto";
 
-    const contentP = document.createElement("p");
-    contentP.classList.add("contentHeaderP");
-    contentP.textContent = "Welcome to my restaurant. I hope you enjoy good food, because today, you will be served some good food, bro.";
+    const contentInfo = document.createElement("p");
+    contentInfo.classList.add("content-info");
+    contentInfo.textContent = "Serving the best Italian food in the market at the best price.\r\n";
+    contentInfo.textContent += "We are especially proud of our homemade ingredients and the cozy, comfortable experience we provide with every service.\r\n";
+    contentInfo.textContent += "Open every hour, every day, at 128 Street, Downtown, DL.";
 
-
-    const contentH2 = document.createElement("h2");
-    contentH2.classList.add("contentH2");
-    contentH2.textContent = "SUP BRAH.yo";
-
-    content.append(contentHeader, image, imageTwo, contentP, contentH2);
+    content.append(homeHeader, homeImg, contentTitle, homeDiv);
+    homeDiv.append(contentTitle, contentInfo);
 }
 
 export { homeContent };

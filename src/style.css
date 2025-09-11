@@ -1,3 +1,117 @@
+@font-face {
+    font-family: 'Bad-Coma';
+    src: url('./Bad-Coma.ttf') format('truetype');
+}
+
+html {
+    height: 100vh;
+}
+
 body {
-    background-color: rgb(132, 132, 223);
+    height: 100vh;
+    text-align: center;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+h2 {
+    color: #d65e5e;
+}
+
+#hero {
+    color: #e4ac5e;
+    font-size: 5rem;
+    font-family: 'Bad-Coma', 'Poppins', 'Times New Roman', Times, serif;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-around;
+}
+
+#title {
+    letter-spacing: 0.1em;
+}
+
+#wing-flip {  
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.svg-filter {
+    filter: brightness(0) saturate(100%) invert(47%) sepia(12%) saturate(3370%) hue-rotate(317deg) brightness(77%) contrast(84%);
+}
+
+nav, main, footer {
+    background-color: #1F2937;
+}
+
+main {
+    flex: 1;
+}
+
+#homepage, #menu, #contact {
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    color: #b8a987;
+}
+
+.home-header, .menu-header, .contact-header {
+    font-size: 50px;
+    color: #b8a987;
+}
+
+.options {
+    margin-top: 2.5px;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+}
+
+#homepage:hover, #menu:hover, #contact:hover {
+    cursor: pointer;
+    color: #d65e5e;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+}
+
+.content-title {
+    color: #66400b;
+    text-decoration: underline;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.card {
+    background-color: #E3C281;
+    border: 4px solid #2F7A6D;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 3px rgba(5, 3, 0.2, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    font-style: italic;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+p {
+    color: #3d4758;
+    white-space: pre-wrap;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: right;
 }

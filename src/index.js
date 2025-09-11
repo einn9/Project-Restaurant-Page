@@ -4,11 +4,11 @@ import { menuContent } from "./menu.js";
 import { contactContent } from "./contact.js";
 
 // Console log test
-console.log("WASSUP");
+console.log("test");
 
 //  Select content div 
 const content = document.querySelector("#content");
-;
+
 
 // Working with buttons
 
